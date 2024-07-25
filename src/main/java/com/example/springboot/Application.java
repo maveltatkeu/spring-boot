@@ -17,9 +17,10 @@ public class Application {
 
         SpringApplication.run(Application.class, args);
     }
-	
+
     @GetMapping(value = "/welcome")
-    public void welcome() {
+    public String welcome() {
         logger.info("Wellcome to PicsouDEV");
+        return "Wellcome to PicsouDEV";
     }
 }
